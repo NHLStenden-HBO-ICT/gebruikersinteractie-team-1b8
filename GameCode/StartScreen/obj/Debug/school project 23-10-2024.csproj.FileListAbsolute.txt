@@ -1,0 +1,18 @@
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\bin\Debug\school project 23-10-2024.exe.config
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\bin\Debug\school project 23-10-2024.exe
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\bin\Debug\school project 23-10-2024.pdb
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\bin\Debug\XamlAnimatedGif.dll
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\bin\Debug\XamlAnimatedGif.pdb
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.csproj.AssemblyReference.cache
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\MainWindow.g.cs
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\App.g.cs
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024_MarkupCompile.cache
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024_MarkupCompile.lref
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\MainWindow.baml
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.g.resources
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school_project_23_10_2024.Properties.Resources.resources
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.csproj.GenerateResource.cache
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.csproj.CoreCompileInputs.cache
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school p.4486BA0B.Up2Date
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.exe
+C:\Users\jille\source\repos\school project 23-10-2024\school project 23-10-2024\obj\Debug\school project 23-10-2024.pdb

@@ -1,0 +1,72 @@
+﻿<Window x:Class="school_project_23_10_2024.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:school_project_23_10_2024"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif">
+
+
+    <Grid>
+
+        <!-- Background + GridRow Setup -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/startscreen.jpg"/>
+        </Grid.Background>
+        
+        
+        <!-- Title -->
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,260" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Foreground="#F2E8CF" FontFamily="Gameplay" Text="Game Name" FontSize="50"
+                       HorizontalAlignment="Center" VerticalAlignment="Top" Margin="15">
+                <TextBlock.Effect>
+                    <DropShadowEffect Color="#FF1C2513" BlurRadius="15"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </Grid>
+
+
+        <!-- Buttons -->
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,65" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="60*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- START -->
+            <Button Click="StartButton_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="Assets/button_start.png"/>
+            </Button>
+
+            <!-- TUTORIAL -->
+            <Button Click="TutorialButton_Click" Grid.Row="1" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="Assets/button_tutorial.png"/>
+            </Button>
+
+            <!-- NEW GAME -->
+            <Button Click="NewGameButton_Click" Grid.Row="2" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="Assets/button_new_game.png"/>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
