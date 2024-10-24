@@ -10,7 +10,7 @@
 
     <Grid>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
-        <Image Source="/Assets/Map (1).jpg" Stretch="Fill" Panel.ZIndex="-1" Grid.RowSpan="5" Grid.ColumnSpan="4"/>
+        <Image Source="Assets/Map (1).jpg" Stretch="Fill" Panel.ZIndex="-1" Grid.RowSpan="5" Grid.ColumnSpan="4"/>
 
         <Button Name="shopbutton" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"   Panel.ZIndex="10" Background="Transparent" BorderBrush="Transparent" Click="shopbutton_Click">
             <Image Source="/Assets/button_shop.png"  Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"   Panel.ZIndex="1"/>

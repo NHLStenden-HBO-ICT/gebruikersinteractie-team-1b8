@@ -23,9 +23,11 @@
         <Button x:Name="WindowMode" Background="Transparent" BorderBrush="Transparent" Click="WindowMode_Click" Grid.Row="4">
             <Image Source="/Assets/Window mode.png" Panel.ZIndex="10"/>
         </Button>
-        <Image  Grid.Row="3" Source="/Assets/Resolution.png" Panel.ZIndex="10"/>
-        <Image  Grid.Row="2" Source="/Assets/Volume.png" Panel.ZIndex="10"/>
-        <Image  Grid.Row="1" Source="/Assets/Music.png" Panel.ZIndex="10"/>
+        <Image  Grid.Row="3" Source="/Assets/Resolution.png" Height="100" Panel.ZIndex="10"/>
+        <Image  Grid.Row="2" Source="/Assets/Volume.png" Height="100" Panel.ZIndex="10"/>
+        <Image  Grid.Row="1" Source="/Assets/Music.png" Height="100" Panel.ZIndex="10"/>
+        <Image  Grid.Row="4" Grid.Column="1" Source="Assets/button_dropdown_screen.png" Height="100" Panel.ZIndex="10"/>
+        <Image  Grid.Row="3" Grid.Column="1" Source="Assets/button_dropdown_res.png" Height="100" Panel.ZIndex="10"/>
         <Slider Grid.Column="1"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" />
         <Slider Grid.Column="1"  Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" />
        

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Merchant_Quest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace MerchantQuest
 
         private void Continue_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new StartScreen());
+            NavigationService.Navigate(new Page1());
         }
     }
 }

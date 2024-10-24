@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Merchant_Quest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,7 +43,7 @@ namespace MERCHANT_QUESTS01
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Page1());
         }
 
         private void btnSword_Click(object sender, RoutedEventArgs e)

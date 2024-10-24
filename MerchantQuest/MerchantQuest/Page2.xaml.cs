@@ -27,7 +27,7 @@ namespace Merchant_Quest
 
         private void Settingsbutton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Page1());
+            NavigationService.GoBack();
         }
 
         private void WindowMode_Click(object sender, RoutedEventArgs e)

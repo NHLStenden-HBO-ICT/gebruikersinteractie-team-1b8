@@ -74,6 +74,9 @@
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="shop.xaml.cs">
+      <DependentUpon>shop.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartScreen.xaml.cs">
       <DependentUpon>StartScreen.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Page2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="shop.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -289,11 +296,42 @@
     <Resource Include="Assets\healthbar2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\5 diamonds 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\8 diamonds 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\9 diamonds 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\axe.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Map %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Music.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Resolution %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Resolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\shopscreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\spear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="Assets\Window mode.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

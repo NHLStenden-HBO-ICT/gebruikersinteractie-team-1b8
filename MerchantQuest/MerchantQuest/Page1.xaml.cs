@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MERCHANT_QUESTS01;
+using MerchantQuest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,22 +33,23 @@ namespace Merchant_Quest
 
         private void fightbutton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Fight());
         }
-
+        //navigates to Startscreen
         private void backbutton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new StartScreen());
         }
 
+        //navigates to Settings
         private void settingsbutton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Page2());
         }
-
+        //navigates to Shop
         private void shopbutton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new shop());
         }
     }
 
