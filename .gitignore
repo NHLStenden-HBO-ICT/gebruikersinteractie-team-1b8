@@ -1,5 +1,47 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+
+# Build results
+bin/
+obj/
+
+# Debug and Release folders
+Debug/
+Release/
+
+# NuGet Packages
+packages/
+*.nupkg
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+# User-specific files
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.g.*
+*.g.i.*
+
+# Visual Studio temporary files
+.vs/
+
+# Publish outputs
+publish/
+
+# Rider/Resharper files
+.idea/
+*.DotSettings
+_ReSharper*/
+
+# JetBrains Rider temp files
+.idea/
+.idea_modules/
