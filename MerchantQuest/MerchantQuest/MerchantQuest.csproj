@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2C35A1D-E317-4EDB-8D12-1AA8AA929B11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MerchantQuest</RootNamespace>
+    <AssemblyName>MerchantQuest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="XamlAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=20a987d8023d9690, processorArchitecture=MSIL">
+      <HintPath>..\packages\XamlAnimatedGif.2.3.0\lib\net45\XamlAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="StartScreen.xaml.cs">
+      <DependentUpon>StartScreen.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="StartScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_barrel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_beam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_rocks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_shop_inside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_wall_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_wall2_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\asset_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\background_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\background_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_armor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_dropdown_res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_dropdown_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_fight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_new_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_training.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_tutorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\button_weapons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\char_knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\char_knight_dead.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\char_knight_idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\char_necro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\char_shop_keeper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\icon_gem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\slider_volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\startscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\startscreen.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
