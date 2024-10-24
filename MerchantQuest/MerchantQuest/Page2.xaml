@@ -1,0 +1,53 @@
+﻿<Page x:Class="Merchant_Quest.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Merchant_Quest"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+      Title="Page2">
+
+    <Grid>
+
+        <Image Source="/Assets/background_1.jpg" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
+
+
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
+        <Button x:Name="Backbutton" Background="Transparent" BorderBrush="Transparent" Click="Settingsbutton_Click" Grid.Row="5" Grid.Column="0" >
+            <Image  Source="/Assets/button_back.png" Panel.ZIndex="10"/>
+        </Button>
+
+        <Button x:Name="WindowMode" Background="Transparent" BorderBrush="Transparent" Click="WindowMode_Click" Grid.Row="4">
+            <Image Source="/Assets/Window mode.png" Panel.ZIndex="10"/>
+        </Button>
+        <Image  Grid.Row="3" Source="/Assets/Resolution.png" Panel.ZIndex="10"/>
+        <Image  Grid.Row="2" Source="/Assets/Volume.png" Panel.ZIndex="10"/>
+        <Image  Grid.Row="1" Source="/Assets/Music.png" Panel.ZIndex="10"/>
+        <Slider Grid.Column="1"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" />
+        <Slider Grid.Column="1"  Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" />
+       
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+    </Grid>
+</Page>

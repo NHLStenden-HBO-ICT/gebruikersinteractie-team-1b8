@@ -1,0 +1,50 @@
+﻿<Page x:Class="Merchant_Quest.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Merchant_Quest"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        <Image Source="/Assets/Map (1).jpg" Stretch="Fill" Panel.ZIndex="-1" Grid.RowSpan="5" Grid.ColumnSpan="4"/>
+
+        <Button Name="shopbutton" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"   Panel.ZIndex="10" Background="Transparent" BorderBrush="Transparent" Click="shopbutton_Click">
+            <Image Source="/Assets/button_shop.png"  Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"   Panel.ZIndex="1"/>
+        </Button>
+
+        <Button Name="fightbutton" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"   Panel.ZIndex="10" Background="Transparent" BorderBrush="Transparent" Click="fightbutton_Click">
+            <Image Source="/Assets/button_fight.png" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"  Panel.ZIndex="1"/>
+
+        </Button>
+
+        <Button Name="backbutton" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center"   Panel.ZIndex="10" Background="Transparent" BorderBrush="Transparent" Click="backbutton_Click">
+            <Image Source="/Assets/button_back.png"  Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center"  Panel.ZIndex="1"/>
+        </Button>
+
+        <Button Name="settingsbutton" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Panel.ZIndex="10" Background="Transparent" BorderBrush="Transparent" Click="settingsbutton_Click">
+            <Image Source="Assets/button_settings.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Button>
+
+        <Image Grid.Column="3"  Grid.Row="4" HorizontalAlignment="Right" Source="/Assets/icon_gem.png"  />
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="347*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="453*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+    
+</Page>
